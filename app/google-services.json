@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "383377748047",
+    "project_id": "daanveer-9146d",
+    "storage_bucket": "daanveer-9146d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:383377748047:android:795788b83829354317fa3a",
+        "android_client_info": {
+          "package_name": "com.hackuniv.daanveer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "383377748047-2egqaaqit80rm9js0gugjtpjo2orvkj3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB0moEO9LuMEvHgJBovr0lWQHfEaa-un6c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "383377748047-2egqaaqit80rm9js0gugjtpjo2orvkj3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

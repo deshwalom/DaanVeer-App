@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".AllFragments.HomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="25dp"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:layout_marginEnd="35dp"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/dm_sans_bold"
+                android:text="Hello!"
+                android:textColor="#5879F8"
+                android:textSize="26sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.178" />
+
+            <TextView
+                android:id="@+id/donatorUserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-5dp"
+                android:fontFamily="@font/rubik_bold"
+                android:text=""
+                android:textColor="#2D51E1"
+                android:textSize="26sp"
+                android:maxLength="15"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/textView3"
+                app:layout_constraintTop_toBottomOf="@+id/textView3"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profileImage"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:padding="2dp"
+                android:src="@drawable/profileuser"
+                app:civ_border_color="#407C9F"
+                app:civ_border_width="2dp"
+                app:layout_constraintBottom_toBottomOf="@+id/donatorUserName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textView3" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="5dp"
+                app:layout_constraintBottom_toBottomOf="@+id/textView3"
+                app:layout_constraintStart_toEndOf="@+id/textView3"
+                app:layout_constraintTop_toTopOf="@+id/textView3"
+                app:srcCompat="@drawable/hiii" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginEnd="40dp"
+            android:padding="15dp"
+            app:cardBackgroundColor="#E8E8E8"
+            app:cardCornerRadius="25dp"
+            app:cardElevation="5dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="3dp">
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="130dp"
+                    android:layout_height="150dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="2dp"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/textView5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/giftbox" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="3dp"
+                    android:fontFamily="@font/rubik_bold"
+                    android:padding="5dp"
+                    android:text="Help is our\nmain goal"
+                    android:textColor="#2D51E1"
+                    android:textSize="24sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imageView5"
+                    app:layout_constraintTop_toTopOf="@+id/imageView5"
+                    app:layout_constraintVertical_bias="0.232" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnLetsDonate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+
+                    android:background="@drawable/bg_getstart_button"
+                    android:drawableRight="@drawable/arrow_right_24x"
+                    android:elevation="5dp"
+                    android:fontFamily="@font/dm_sans_bold"
+                    android:gravity="center"
+                    android:paddingStart="7dp"
+                    android:paddingEnd="7dp"
+                    android:text="Let's Donate"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="11sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+                    app:layout_constraintEnd_toEndOf="@+id/textView5"
+                    app:layout_constraintStart_toStartOf="@+id/textView5"
+                    app:layout_constraintTop_toBottomOf="@+id/textView5" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="35dp"
+            android:fontFamily="@font/alata"
+            android:padding="5dp"
+            android:text="Category"
+            android:textColor="#0067C4"
+            android:textSize="29sp"
+            android:textStyle="bold" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginBottom="3dp"
+                    android:elevation="5dp"
+                    app:cardBackgroundColor="#E8E8E8"
+                    app:cardCornerRadius="20dp"
+                    app:contentPadding="5dp">
+
+                    <ImageView
+                        android:id="@+id/imageView7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/foodview" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginBottom="3dp"
+                    android:elevation="5dp"
+                    app:cardBackgroundColor="#E8E8E8"
+                    app:cardCornerRadius="20dp"
+                    app:contentPadding="5dp">
+
+                    <ImageView
+                        android:id="@+id/imageView71"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/clothesview" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginBottom="3dp"
+                    android:elevation="5dp"
+                    app:cardBackgroundColor="#E8E8E8"
+                    app:cardCornerRadius="20dp"
+                    app:contentPadding="5dp">
+
+                    <ImageView
+                        android:id="@+id/imageView721"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/educationview" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginBottom="3dp"
+                    android:elevation="5dp"
+                    app:cardBackgroundColor="#E8E8E8"
+                    app:cardCornerRadius="20dp">
+
+                    <ImageView
+                        android:id="@+id/imageView712"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/shoesview" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginBottom="3dp"
+                    android:elevation="5dp"
+                    app:cardBackgroundColor="#E8E8E8"
+                    app:cardCornerRadius="20dp">
+
+                    <ImageView
+                        android:id="@+id/imageView7143"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/cerealsview" />
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/swipebutton"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_gravity="right"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/bg_getstart_button"
+            android:drawableRight="@drawable/arrow_left_24_small"
+            android:drawableTint="@color/white"
+            android:elevation="5dp"
+            android:fontFamily="@font/dm_sans_bold"
+            android:gravity="center"
+            android:paddingStart="13dp"
+            android:paddingEnd="7dp"
+            android:text="Swipe Right"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="10sp" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/donation_png" />
+
+
+    </LinearLayout>
+
+
+</FrameLayout>

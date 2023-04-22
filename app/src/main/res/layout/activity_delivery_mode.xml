@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".DeliveryMode">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/alata"
+            android:padding="8dp"
+            android:text="Delivery Mode"
+            android:textColor="@color/hint_text"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbByOrg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="32dp"
+                android:buttonTint="@color/hint_text"
+                android:checked="true"
+                android:padding="3dp"
+                android:textSize="16sp"
+                android:text="By NGO"
+                android:textColor="@color/hint_text"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/rbBySelf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="32dp"
+                android:buttonTint="@color/hint_text"
+                android:padding="3dp"
+                android:text="By self"
+                android:textSize="16sp"
+                android:textColor="@color/hint_text"
+                android:textStyle="bold" />
+
+
+        </RadioGroup>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/byorg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_black"
+        android:inputType="textMultiLine"
+        android:padding="8dp"
+        android:text="Organisation will pick up the goods from the given address."
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/byself"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="You have to deliver goods yourself to the organisation. "
+        android:visibility="gone"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:padding="8dp"
+        android:inputType="textMultiLine"
+        android:fontFamily="@font/roboto_black"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSaveMode"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_gravity="center"
+        android:layout_margin="45dp"
+        android:background="@drawable/bg_getstart_button"
+        android:drawableRight="@drawable/arrow_right_24x"
+        android:elevation="5dp"
+        android:fontFamily="@font/dm_sans_bold"
+        android:gravity="center"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:text="Submit "
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        tools:ignore="TouchTargetSizeCheck" />
+
+
+</LinearLayout>

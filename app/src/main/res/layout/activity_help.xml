@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp"
+    tools:context=".HelpActivity">
+
+    <TextView
+        android:id="@+id/txtHelp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="3dp"
+        android:text="Have any problem?"
+        android:textColor="#494949"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/txtHelp2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="3dp"
+        android:text="If you have any type of problem then contact us!"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:drawableStart="@drawable/mail_24x"
+        android:drawablePadding="10dp"
+        android:padding="6dp"
+        android:text="sachincse2020@gmail.com"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:drawableTint="#000000" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/mail_24x"
+        android:drawablePadding="10dp"
+        android:padding="6dp"
+        android:text="omdeshwal06@gmail.com"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:drawableTint="#000000" />
+</LinearLayout>

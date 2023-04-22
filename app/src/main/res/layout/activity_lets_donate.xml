@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="15dp"
+    android:paddingStart="15dp"
+    android:paddingEnd="15dp"
+    android:orientation="vertical"
+    tools:context=".LetsDonate">
+
+  <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:scrollbars="vertical|none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_margin="8dp"
+          android:background="@drawable/bg_checkbox"
+          android:elevation="8dp"
+          android:orientation="horizontal"
+          android:paddingStart="15dp">
+
+        <CheckBox
+            android:id="@+id/checkBoxFood"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="#0067C4"
+            android:fontFamily="@font/rubik_bold"
+            android:padding="5dp"
+            android:paddingStart="10dp"
+            android:text="Food"
+            android:textColor="@color/hint_text"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_margin="8dp"
+          android:background="@drawable/bg_checkbox"
+          android:elevation="8dp"
+          android:orientation="horizontal"
+          android:paddingStart="15dp">
+
+        <CheckBox
+            android:id="@+id/checkBoxClothes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="#0067C4"
+            android:fontFamily="@font/rubik_bold"
+            android:padding="5dp"
+            android:paddingStart="10dp"
+            android:text="Clothes"
+            android:textColor="@color/hint_text"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_margin="8dp"
+          android:background="@drawable/bg_checkbox"
+          android:elevation="8dp"
+          android:orientation="horizontal"
+          android:paddingStart="15dp">
+
+        <CheckBox
+            android:id="@+id/checkBoxEducation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="#0067C4"
+            android:fontFamily="@font/rubik_bold"
+            android:padding="5dp"
+            android:paddingStart="10dp"
+            android:text="Books and Notes"
+            android:textColor="@color/hint_text"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_margin="8dp"
+          android:background="@drawable/bg_checkbox"
+          android:elevation="8dp"
+          android:orientation="horizontal"
+          android:paddingStart="15dp">
+
+        <CheckBox
+            android:id="@+id/checkBoxShoes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="#0067C4"
+            android:fontFamily="@font/rubik_bold"
+            android:padding="5dp"
+            android:paddingStart="10dp"
+            android:text="Shoes"
+            android:textColor="@color/hint_text"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_margin="8dp"
+          android:background="@drawable/bg_checkbox"
+          android:elevation="8dp"
+          android:orientation="horizontal"
+          android:paddingStart="15dp">
+
+        <CheckBox
+            android:id="@+id/checkBoxCereals"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="#0067C4"
+            android:fontFamily="@font/rubik_bold"
+            android:padding="5dp"
+            android:paddingStart="10dp"
+            android:text="Cereals ( Anaaj )"
+            android:textColor="@color/hint_text"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+      </LinearLayout>
+
+      <com.google.android.material.textfield.TextInputLayout
+          android:id="@+id/tilOther"
+          style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+
+          android:layout_marginStart="32dp"
+          android:layout_marginTop="20dp"
+          android:layout_marginEnd="32dp"
+          android:hint="Other"
+          app:errorEnabled="true"
+          app:startIconTint="#85D2FF">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etOtherItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionDone"
+            android:inputType="textCapWords"
+            android:textColor="@color/black"
+
+            />
+
+      </com.google.android.material.textfield.TextInputLayout>
+
+      <com.google.android.material.textfield.TextInputLayout
+          android:id="@+id/tilDonatorName"
+          style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="32dp"
+          android:layout_marginEnd="32dp"
+          android:hint="Donator Name"
+          app:errorEnabled="true"
+          app:errorIconDrawable="@drawable/info_24x"
+          app:errorIconTint="@color/reddish_button_color"
+          app:helperTextTextColor="@color/reddish_button_color"
+          app:startIconDrawable="@drawable/user_profile"
+          app:startIconTint="@color/hint_text">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etDonatorName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionDone"
+            android:inputType="textPersonName|textCapWords"
+            android:textColor="@color/black"
+
+            />
+
+      </com.google.android.material.textfield.TextInputLayout>
+
+      <com.google.android.material.textfield.TextInputLayout
+          android:id="@+id/tilDonatorPhone"
+          style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="32dp"
+          android:layout_marginEnd="32dp"
+          android:hint="Donator Mobile"
+          app:counterMaxLength="10"
+          app:counterEnabled="true"
+          app:counterTextColor="@color/hint_text"
+          app:errorEnabled="true"
+          app:errorIconDrawable="@drawable/info_24x"
+          app:errorIconTint="@color/reddish_button_color"
+          app:prefixText="+91"
+          app:prefixTextColor="@color/black"
+          app:startIconDrawable="@drawable/call_24x"
+          app:startIconTint="@color/hint_text">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etDonatorPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionDone"
+            android:inputType="phone"
+            android:maxLength="10"
+            android:textColor="@color/black"
+
+            />
+
+      </com.google.android.material.textfield.TextInputLayout>
+
+      <com.google.android.material.textfield.TextInputLayout
+          android:id="@+id/tilDonatorAdd"
+          style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="32dp"
+          android:layout_marginEnd="32dp"
+          android:hint="Donator Full Address"
+          app:errorEnabled="true"
+          app:errorIconDrawable="@drawable/info_24x"
+          app:errorIconTint="@color/reddish_button_color"
+          app:startIconDrawable="@drawable/home_24"
+          app:startIconTint="@color/hint_text">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etDonatorAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionDone"
+            android:inputType="textPostalAddress|textCapWords"
+            android:textColor="@color/black"
+
+            />
+
+      </com.google.android.material.textfield.TextInputLayout>
+
+      <androidx.appcompat.widget.AppCompatButton
+          android:id="@+id/btnNext"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="right"
+          android:layout_marginTop="10dp"
+          android:layout_marginEnd="32dp"
+          android:layout_marginBottom="42dp"
+          android:elevation="10dp"
+          android:gravity="center"
+          android:paddingStart="20dp"
+          android:paddingEnd="20dp"
+          android:text="  Verify and Continue"
+          android:textAllCaps="false"
+          android:textColor="@color/hint_text"
+          android:textSize="14sp"
+          android:textStyle="bold" />
+    </LinearLayout>
+  </ScrollView>
+</LinearLayout>

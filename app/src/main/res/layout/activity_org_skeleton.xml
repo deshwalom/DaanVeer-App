@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OrgSkeleton"
+    android:padding="10dp"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                app:cardBackgroundColor="#E8E8E8"
+                app:cardCornerRadius="11dp"
+                app:cardElevation="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:padding="8dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/orgImage"
+                        android:layout_width="96dp"
+                        android:layout_height="96dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:padding="10dp"
+                        android:src="@drawable/profileuser"
+                        app:civ_border_color="@color/hint_text"
+                        app:civ_border_width="2dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="10dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/orgName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/rubik_medium"
+                            android:padding="3dp"
+                            android:text="Sachin Kadian"
+                            android:textColor="@color/hint_text"
+                            android:textSize="24sp"
+                            android:textStyle="bold"
+                            app:drawableTint="#3C9100" />
+                        <TextView
+                            android:id="@+id/orgFounderName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/rubik_medium"
+                            android:padding="3dp"
+                            android:text="Sachin Kadian"
+                            android:textColor="@color/hint_text"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="21dp"
+                app:cardElevation="8dp"
+                app:cardUseCompatPadding="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.065">
+
+                <LinearLayout
+                    android:id="@+id/llorg3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#F6F8F8"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:padding="15dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0">
+
+
+                    <TextView
+                        android:id="@+id/orgloc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableStart="@drawable/ic_baseline_location_on_24"
+                        android:drawablePadding="8dp"
+                        android:fontFamily="@font/rubik_bold"
+                        android:padding="5dp"
+                        android:text="Location"
+                        android:textColor="#2D51E1"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:drawableTint="#000000" />
+
+                    <TextView
+                        android:id="@+id/txtloc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/rubik_medium"
+                        android:layout_marginStart="43dp"
+                        android:text="Hisar"
+                        android:textColor="#000000" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="21dp"
+                app:cardElevation="8dp"
+                app:cardUseCompatPadding="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.065">
+
+                <LinearLayout
+                    android:id="@+id/llorg4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#F6F8F8"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:padding="15dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0">
+
+                    <TextView
+                        android:id="@+id/orgcontact"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableStart="@drawable/ic_baseline_local_phone_24"
+                        android:drawablePadding="8dp"
+                        android:fontFamily="@font/rubik_bold"
+                        android:padding="5dp"
+                        android:text="Mobile No."
+                        android:textColor="#2D51E1"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:drawableTint="#000000" />
+
+                    <TextView
+                        android:id="@+id/txtCont"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/rubik_medium"
+                        android:layout_marginStart="40dp"
+                        android:text="8053495740"
+                        android:textColor="#000000" />
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="21dp"
+                app:cardElevation="8dp"
+                app:cardUseCompatPadding="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.065">
+
+                <LinearLayout
+                    android:id="@+id/llorg5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#F6F8F8"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:padding="15dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0">
+
+
+                    <TextView
+                        android:id="@+id/orgdesc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableStart="@drawable/ic_baseline_notes_24"
+                        android:drawablePadding="8dp"
+                        android:fontFamily="@font/rubik_bold"
+                        android:gravity="center_vertical"
+                        android:padding="5dp"
+                        android:text="Description"
+                        android:textColor="#2D51E1"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:drawableTint="#000000" />
+
+                    <TextView
+                        android:id="@+id/txt_desc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/rubik_medium"
+                        android:inputType="textMultiLine"
+                        android:padding="5dp"
+                        android:text="This is an NGO."
+                        android:textColor="#000000" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

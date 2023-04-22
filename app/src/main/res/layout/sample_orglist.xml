@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rowItem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:background="@drawable/bg_checkbox"
+    android:orientation="horizontal">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/orgImage"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:padding="10dp"
+        android:src="@drawable/profileuser"
+        app:civ_border_color="@color/hint_text"
+        app:civ_border_width="2dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/orgName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_bold"
+            android:gravity="start"
+            android:padding="5dp"
+            android:text="Sachin Kadian"
+            android:textColor="@color/hint_text"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:drawableStart="@drawable/place_24"
+            android:fontFamily="@font/dm_sans_bold"
+            android:gravity="center_vertical"
+            android:padding="2dp"
+            android:text="Hissar"
+            android:textColor="#000000"
+            app:drawableTint="@color/hint_text" />
+
+    </LinearLayout>
+
+</LinearLayout>

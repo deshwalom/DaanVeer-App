@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".DonatorActivity">
+
+    <LinearLayout
+        android:id="@+id/linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_home_layout"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imagelist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:onClick="openOrgListFragment"
+            app:srcCompat="@drawable/listicon"
+            app:tint="#3987CD"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageView
+            android:id="@+id/imagehome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:onClick="openHomeFragment"
+            app:srcCompat="@drawable/homeicon"
+            app:tint="#0067C4"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageView
+            android:id="@+id/imageprofile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:onClick="openProfileFragment"
+            app:srcCompat="@drawable/usericon"
+            app:tint="#3987CD"
+            tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".Model.OrgDetails">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/alata"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="Create Your Profile"
+                android:textColor="@color/hint_text"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profileImage"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:src="@drawable/profileuser"
+                app:civ_border_color="#407C9F"
+                app:civ_border_width="2dp" />
+
+            <TextView
+                android:id="@+id/textEditPic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:fontFamily="sans-serif-black"
+                android:text="Add picture"
+                android:textColor="@color/hint_text"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilUsername"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="10dp"
+                android:hint="NGO's Full Name"
+                app:counterEnabled="true"
+                app:startIconTint="@color/hint_text"
+                app:counterMaxLength="30"
+                app:counterTextColor="@color/hint_text"
+                app:errorEnabled="true"
+                app:errorIconDrawable="@drawable/info_24x"
+                app:errorIconTint="@color/reddish_button_color"
+                app:helperTextTextColor="@color/reddish_button_color"
+                app:startIconDrawable="@drawable/ic_baseline_people_24">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etOrgName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPersonName|textCapWords"
+                    android:maxLength="30"
+                    android:textColor="@color/black" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Is NGO registered ?"
+                android:layout_marginStart="21dp"
+                android:layout_marginTop="1dp"
+                android:textSize="15sp"
+                android:padding="5dp"
+                android:textStyle="bold"
+                android:textColor="@color/hint_text"
+                />
+            <RadioGroup
+                android:id="@+id/radioGroup2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="1dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbYes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="32dp"
+                    android:padding="3dp"
+                    android:text="YES"
+                    android:checked="true"
+                    android:buttonTint="@color/hint_text"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/rbNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="32dp"
+                    android:padding="3dp"
+                    android:text="NO"
+                    android:buttonTint="@color/hint_text"
+                    android:textStyle="bold" />
+
+
+            </RadioGroup>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilRegNo"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="10dp"
+                android:hint="Registration No."
+                app:errorEnabled="true"
+                app:errorIconDrawable="@drawable/info_24x"
+                app:errorIconTint="@color/reddish_button_color"
+                app:startIconTint="@color/hint_text"
+                app:startIconDrawable="@drawable/edit_24">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etRegNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionDone"
+                    android:inputType="textCapCharacters"
+                    android:textColor="@color/black"
+
+
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilMobile"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="10dp"
+                android:hint="Mobile No."
+                app:counterEnabled="true"
+                app:errorEnabled="true"
+                app:errorIconDrawable="@drawable/info_24x"
+                app:errorIconTint="@color/reddish_button_color"
+                app:startIconTint="@color/hint_text"
+                app:counterMaxLength="10"
+                app:counterTextColor="@color/hint_text"
+                app:prefixText="+91"
+                app:prefixTextColor="@color/black"
+                app:startIconDrawable="@drawable/call_24x">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etOrgMobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionDone"
+                    android:inputType="phone"
+                    android:maxLength="10"
+                    android:textColor="@color/black"
+
+
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilEmail"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="10dp"
+                android:hint="Email"
+                app:errorEnabled="true"
+                app:errorIconDrawable="@drawable/info_24x"
+                app:errorIconTint="@color/reddish_button_color"
+                app:startIconTint="@color/hint_text"
+                app:startIconDrawable="@drawable/mail_24x">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etOrgEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionDone"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/black"
+
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilAddress"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:startIconTint="@color/hint_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="10dp"
+                android:hint="Org. Address"
+                app:errorEnabled="true"
+                app:errorIconDrawable="@drawable/info_24x"
+                app:errorIconTint="@color/reddish_button_color"
+                app:startIconDrawable="@drawable/home_24">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etOrgAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPostalAddress|textCapWords"
+                    android:textColor="@color/black"
+
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilCity"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="10dp"
+                android:hint="City"
+                app:errorEnabled="true"
+                app:errorIconDrawable="@drawable/info_24x"
+                app:errorIconTint="@color/reddish_button_color"
+                app:startIconDrawable="@drawable/city_24"
+                app:startIconTint="@color/hint_text">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etOrgCity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionDone"
+                    android:inputType="textCapWords"
+                    android:textColor="@color/black"
+
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilDescription"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="10dp"
+                android:hint="Description"
+                app:errorEnabled="true"
+                app:errorIconDrawable="@drawable/info_24x"
+                app:errorIconTint="@color/reddish_button_color"
+                app:startIconDrawable="@drawable/ic_baseline_notes_24"
+                app:startIconTint="@color/hint_text">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etOrgDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionDone"
+                    android:inputType="textCapSentences"
+                    android:textColor="@color/black"
+
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnNext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="42dp"
+                android:background="@drawable/bg_verify_button"
+                android:drawableLeft="@drawable/ic_baseline_save_24"
+                android:drawableTint="@color/hint_text"
+                android:elevation="5dp"
+                android:fontFamily="@font/baloo_paaji"
+                android:gravity="center"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:text="  Save and Next"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

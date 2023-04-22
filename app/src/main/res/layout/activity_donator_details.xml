@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".Model.DonatorDetails">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/alata"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="Create Your Profile"
+                android:textColor="@color/hint_text"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profileImage"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:src="@drawable/profileuser"
+                app:civ_border_color="#407C9F"
+                app:civ_border_width="2dp" />
+
+            <TextView
+                android:id="@+id/textEditPic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:fontFamily="sans-serif-black"
+                android:text="Edit picture"
+                android:textColor="@color/hint_text"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilUsername"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="10dp"
+                android:hint="Full Name"
+                app:counterEnabled="true"
+                app:counterMaxLength="20"
+                app:counterTextColor="@color/hint_text"
+                app:errorEnabled="true"
+                app:errorIconDrawable="@drawable/info_24x"
+                app:errorIconTint="@color/reddish_button_color"
+                app:helperTextTextColor="@color/reddish_button_color"
+                app:startIconDrawable="@drawable/user_profile"
+                app:startIconTint="@color/hint_text">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etUserName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPersonName|textCapWords"
+                    android:maxLength="20"
+                    android:textColor="@color/black" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="21dp"
+                android:padding="5dp"
+                android:text="Select Your Gender"
+                android:textColor="@color/hint_text"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="32dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+
+                >
+
+                <RadioButton
+                    android:id="@+id/rbMale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="32dp"
+                    android:buttonTint="@color/hint_text"
+                    android:checked="true"
+                    android:padding="3dp"
+                    android:text="Male"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/rbFemale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="32dp"
+                    android:buttonTint="@color/hint_text"
+                    android:padding="3dp"
+                    android:text="Female"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/rbOthers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/hint_text"
+                    android:padding="3dp"
+                    android:text="Others"
+                    android:textStyle="bold" />
+            </RadioGroup>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilAge"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="10dp"
+                android:hint="Age"
+                app:errorEnabled="true"
+                app:errorIconDrawable="@drawable/info_24x"
+                app:errorIconTint="@color/reddish_button_color"
+                app:startIconDrawable="@drawable/age_24x"
+                app:startIconTint="@color/hint_text">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etAge"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionDone"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    android:textColor="@color/black"
+
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilMobile"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="10dp"
+                android:hint="Mobile No."
+                app:counterEnabled="true"
+                app:counterMaxLength="10"
+                app:counterTextColor="@color/hint_text"
+                app:errorEnabled="true"
+                app:errorIconDrawable="@drawable/info_24x"
+                app:errorIconTint="@color/reddish_button_color"
+                app:prefixText="+91"
+                app:prefixTextColor="@color/black"
+                app:startIconDrawable="@drawable/call_24x"
+                app:startIconTint="@color/hint_text">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etMobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionDone"
+                    android:inputType="phone"
+                    android:maxLength="10"
+                    android:textColor="@color/black"
+
+
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilEmail"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="10dp"
+                android:hint="Email"
+                app:errorEnabled="true"
+                app:errorIconDrawable="@drawable/info_24x"
+                app:errorIconTint="@color/reddish_button_color"
+                app:startIconDrawable="@drawable/mail_24x"
+                app:startIconTint="@color/hint_text">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionDone"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/black"
+
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilAddress"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="10dp"
+                android:hint="Home Address"
+                app:errorEnabled="true"
+                app:errorIconDrawable="@drawable/info_24x"
+                app:errorIconTint="@color/reddish_button_color"
+                app:startIconDrawable="@drawable/home_24"
+                app:startIconTint="@color/hint_text">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPostalAddress"
+                    android:textColor="@color/black"
+
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilCity"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="10dp"
+                android:hint="City"
+                app:errorEnabled="true"
+                app:errorIconDrawable="@drawable/info_24x"
+                app:errorIconTint="@color/reddish_button_color"
+                app:startIconDrawable="@drawable/city_24"
+                app:startIconTint="@color/hint_text">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etCity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionDone"
+                    android:inputType="textCapWords"
+                    android:textColor="@color/black"
+
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="21dp"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:text="Want to be a Volunteer"
+                android:textColor="@color/hint_text"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbYes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="32dp"
+                    android:buttonTint="@color/hint_text"
+                    android:padding="3dp"
+                    android:text="YES"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/rbNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="32dp"
+                    android:buttonTint="@color/hint_text"
+                    android:checked="true"
+                    android:padding="3dp"
+                    android:text="NO"
+                    android:textStyle="bold" />
+
+
+            </RadioGroup>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnSave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="42dp"
+                android:background="@drawable/bg_verify_button"
+                android:drawableLeft="@drawable/ic_baseline_save_24"
+                android:drawableTint="@color/hint_text"
+                android:elevation="5dp"
+                android:fontFamily="@font/baloo_paaji"
+                android:gravity="center"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:text="  Verify and Save"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

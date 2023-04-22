@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".Model.OrganisationEditProfile">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/alata"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="Edit Your Profile"
+                android:textColor="@color/hint_text"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profileImageOrg"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:src="@drawable/profileuser"
+                app:civ_border_color="#407C9F"
+                app:civ_border_width="2dp" />
+
+            <TextView
+                android:id="@+id/textEditPic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:fontFamily="sans-serif-black"
+                android:text="Edit picture"
+                android:textColor="@color/hint_text"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilOrgUsername"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="10dp"
+                android:hint="Organisation Name"
+
+                app:counterEnabled="true"
+                app:counterMaxLength="30"
+                app:counterTextColor="@color/hint_text"
+                app:errorEnabled="true"
+                app:errorIconDrawable="@drawable/info_24x"
+                app:errorIconTint="@color/reddish_button_color"
+                app:helperTextTextColor="@color/reddish_button_color"
+                app:startIconDrawable="@drawable/user_profile"
+                app:startIconTint="@color/hint_text">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etOrgUserName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPersonName|textCapWords"
+                    android:maxLength="30"
+                    android:text="Sachin"
+                    android:textColor="@color/black" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="21dp"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:text="Is Organisation Verified ?"
+                android:textColor="@color/hint_text"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+            <RadioGroup
+                android:id="@+id/radioGroup2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbYes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="32dp"
+                    android:padding="3dp"
+                    android:text="YES"
+                    android:buttonTint="@color/hint_text"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/rbNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="32dp"
+                    android:buttonTint="@color/hint_text"
+                    android:checked="false"
+                    android:padding="3dp"
+                    android:text="NO"
+                    android:textStyle="bold" />
+
+
+            </RadioGroup>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilRegNo"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="10dp"
+                android:hint="Registration No."
+                android:visibility="gone"
+                app:errorEnabled="true"
+                app:errorIconDrawable="@drawable/info_24x"
+                app:errorIconTint="@color/reddish_button_color"
+                app:startIconDrawable="@drawable/edit_24"
+                app:startIconTint="@color/hint_text">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etRegNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionDone"
+                    android:inputType="textCapCharacters"
+                    android:textColor="@color/black"
+
+
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilOrgMobile"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="10dp"
+                android:hint="Mobile No."
+                app:counterEnabled="true"
+                app:errorEnabled="true"
+                app:errorIconDrawable="@drawable/info_24x"
+                app:errorIconTint="@color/reddish_button_color"
+                app:startIconTint="@color/hint_text"
+                app:counterMaxLength="10"
+                app:counterTextColor="@color/hint_text"
+                app:prefixText="+91"
+                app:prefixTextColor="@color/black"
+                app:startIconDrawable="@drawable/call_24x">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etOrgMobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionDone"
+                    android:inputType="phone"
+                    android:maxLength="10"
+                    android:textColor="@color/black"
+
+
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilOrgEmail"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="10dp"
+                android:hint="Email"
+                app:errorEnabled="true"
+                app:errorIconDrawable="@drawable/info_24x"
+                app:errorIconTint="@color/reddish_button_color"
+                app:startIconTint="@color/hint_text"
+                app:startIconDrawable="@drawable/mail_24x">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etOrgEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionDone"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/black"
+
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilOrgAddress"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:startIconTint="@color/hint_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="10dp"
+                android:hint="Home Address"
+                app:errorEnabled="true"
+                app:errorIconDrawable="@drawable/info_24x"
+                app:errorIconTint="@color/reddish_button_color"
+                app:startIconDrawable="@drawable/home_24">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etOrgAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPostalAddress|textCapWords"
+                    android:textColor="@color/black"
+
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilOrgCity"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="10dp"
+                android:hint="City"
+                app:errorEnabled="true"
+                app:errorIconDrawable="@drawable/info_24x"
+                app:errorIconTint="@color/reddish_button_color"
+                app:startIconDrawable="@drawable/city_24"
+                app:startIconTint="@color/hint_text">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etOrgCity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionDone"
+                    android:inputType="textCapWords"
+                    android:textColor="@color/black"
+
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilDescription"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="10dp"
+                android:hint="Description"
+                app:errorEnabled="true"
+                app:errorIconDrawable="@drawable/info_24x"
+                app:errorIconTint="@color/reddish_button_color"
+                app:startIconDrawable="@drawable/ic_baseline_notes_24"
+                app:startIconTint="@color/hint_text">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etOrgDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionDone"
+                    android:inputType="textCapSentences"
+                    android:textColor="@color/black"
+
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnSaveVerify"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="32dp"
+                    android:layout_marginBottom="42dp"
+                    android:background="@drawable/bg_verify_button"
+                    android:drawableLeft="@drawable/ic_baseline_save_24"
+                    android:drawableTint="@color/hint_text"
+                    android:elevation="5dp"
+                    android:fontFamily="@font/baloo_paaji"
+                    android:gravity="center"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:text="  Verify and Save"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnFounderEditProfile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="42dp"
+                    android:background="@drawable/bg_verify_button"
+                    android:drawableLeft="@drawable/next_24x"
+                    android:drawableTint="@color/hint_text"
+                    android:elevation="5dp"
+                    android:fontFamily="@font/baloo_paaji"
+                    android:gravity="center"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:text="  Founder Details"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
